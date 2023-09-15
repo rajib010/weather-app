@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+}
+.card{
+    width: 33%;
+    margin: 1vw 33%;
+    text-align: center;
+    /* height: 95vh; */
+    color: #fff;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    border-radius: 4vw;
+}
+
+.search{
+    width: 27%;
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.error{
+    font-size: 2.5vw;
+    text-align: center;
+    display: none;
+}
+
+.inputField{
+    height: 3vw;
+    width: 23vw;
+    border-radius: 0.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+    border: none;
+}
+#searchBtn{
+    height: 3vw;
+    border-radius: 30%;
+    margin-left: 0.5vw;
+    border: none;
+    cursor: pointer;
+}
+
+#searchBtn img{
+    padding: 0.3vw;
+    width: 2.5vw;
+    height: 1.7vw;
+}
+
+.weather{
+    display: none;
+}
+
+.weatherIcon{
+    height: 16vw;
+}
+
+.weather h1{
+    font-size: 5vw;
+    font-weight: bolder;
+}
+.weather h2{
+    font-size: 2.2vw;
+    font-weight: bolder;
+}
+
+.details{
+    width: 64%;
+    margin: auto;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    padding: 1vw;
+}
+
+.column img{
+    width: 5vw;
+    height: 5vw;
+}
+.column p{
+    font-size: 1.5vw;
+    padding: 0.1vw;
+}
+
+@media (max-width:600px) {
+    .card{
+        margin: 3vw 5vw;
+        width: 90%;
+        /* height: 80vh; */
+    }
+    .search{
+        width: 100%;
+    }
+
+    .error{
+        font-size: 5vw;
+        padding: 1vw;
+    }
+
+    .inputField{
+        width:84%;
+        height: 10vw;
+        font-size: 4vw;
+        color: teal;
+        font-weight: bolder;
+        border-radius: 2vw;
+        margin: 5vw 0vw;
+    }
+    #searchBtn{
+    height: 10vw;
+    width: 10vw;
+    margin: 5vw 0vw;
+    }
+
+    #searchBtn img{
+        width: 90%;
+        height: inherit;
+    }
+
+    .weatherIcon{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #temperature{
+        font-size: 18vw;
+    }
+
+    #location{
+        font-size: 8vw;
+    }
+    .details{
+        margin-top: 10vw;
+        width: 80%;
+        align-items: center;
+}
+    .column img{
+        width: 25vw;
+        height: 25vw;
+        padding: 3vw;
+    }
+
+    .column p{
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    
+}
